@@ -1,19 +1,14 @@
 class Calculadora:
-    """
-    Classe responsável por operações matemáticas básicas.
-    Implementada seguindo TDD (Test Driven Development).
-    """
-
-    def somar(self, a, b):
+    def somar(self, a: float, b: float) -> float:
         return a + b
 
-    def subtrair(self, a, b):
+    def subtrair(self, a: float, b: float) -> float:
         return a - b
 
-    def multiplicar(self, a, b):
+    def multiplicar(self, a: float, b: float) -> float:
         return a * b
 
-    def dividir(self, a, b):
+    def dividir(self, a: float, b: float) -> float:
         if b == 0:
-            raise ValueError("Divisão por zero não é permitida")
+            raise ValueError("Divisão por zero não permitida")
         return a / b

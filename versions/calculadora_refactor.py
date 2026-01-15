@@ -1,6 +1,4 @@
 class Calculadora:
-    """Calculadora simples seguindo TDD."""
-
     def somar(self, a: float, b: float) -> float:
         return a + b
 
@@ -12,5 +10,5 @@ class Calculadora:
 
     def dividir(self, a: float, b: float) -> float:
         if b == 0:
-            raise ValueError("Divisão por zero não é permitida")
+            raise ValueError("Divisão por zero não permitida")
         return a / b
